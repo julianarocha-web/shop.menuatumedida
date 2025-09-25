@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+    <title>Tienda - Menú a tu medida</title>
+    <!-- Css BS -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <!-- main css -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- css aminate -->
+    <link rel="stylesheet" href="./css/animate.css">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
+</head>
+<body>
+    <div class="fondo-forma">
+        <!-- start nav -->
+        <nav class="navbar navbar-expand-lg menu">
+        <div class="container-fluid">
+            <!-- Logo -->
+            <a class="navbar-brand" href="#">
+            <img src="./img/logo.png" alt="Logo">
+            </a>
+            <!-- Botones SIEMPRE visibles -->
+            <div class="botones align-items-center ms-auto order-lg-2">
+            <!-- Buscar -->
+            <button class="btn search-btn btn-outline-secondary" type="button">
+                <img src="./img/search.svg" alt="Buscar">
+            </button>
+            <!-- Carrito -->
+            <button class="btn cart-btn btn-outline-secondary" type="button"
+                    data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions">
+                <img src="./img/cart2.svg" alt="Carrito">
+            </button>
+            <!-- Iniciar sesión -->
+            <button class="inicioSesion">Iniciar sesión</button>
+            </div>
+            <!-- Botón hamburguesa -->
+            <button class="navbar-toggler ms-2" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+            <img src="./img/list-stars.svg" alt="Menú">
+            </button>
+            <!-- Menú colapsable -->
+            <div class="collapse navbar-collapse order-lg-1" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#destacados">Destacados</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#categorias">Categorías</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#momentos">Momentos</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#contacto">Contacto</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#faqs">FAQ</a>
+                </li>
+            </ul>
+            </div>
+        </div>
+        </nav>
+        <!-- end nav -->
+        <!-- start header -->
+        <header class="plato">
+        <div class="titulos">
+            <h1>Olvidate de <span class="palabraDestacada">planificar</span> las <span class="palabraDestacada">comidas</span> de tu semana</h1>
+            <h2>Te armamos el menú, lo cocinamos y te lo llevamos. Vos solo elegís el plan que más se adapta a tu rutina. </h2>
+            <button class="conocenos">Conocenos</button>
+        </div>
+        <img src="./img/plato-pollo-asado-cena-delicioso-banquete.png" alt="">
+        </header>
+    </div>
+    <!-- start main content  -->
+    <main>
+        <h3 id="destacados" class="fs-2 text-center w-100">Nuestros platos <span class="destacados">DESTACADOS</span></h3>
+        <section class="products">
+            <!-- card I -->
+            <figure class="figure">
+            <div class="figure-img">
+                <img src="./img/comidas/milanesa.png" alt="Milanesa con papas fritas">
+            </div>
+            <figcaption>Milanesa</figcaption>
+                <p>Milanesa de pollo acompañada con salsa a elección y papas fritas.</p>
+                <div class="figure-footer">
+                <span class="price">$13,900</span>
+                    <div class="steppers stepper-verde">
+                        <button>-</button>
+                        <input type="numer" value="1">
+                        <button>+</button>
+                    </div>
+                </div>
+            </figure>
+            <!-- end card I -->
+            <!-- card II -->
+            <figure class="figure figure-naranja">
+            <div class="figure-img">
+                <img src="./img/comidas/pancakes.png" alt="pancakes con frutas">
+            </div>
+            <figcaption>Pancakes</figcaption>
+                <p>Pancakes acompañados con frutas de estacion o dulce de leche.</p>
+                <div class="figure-footer">
+                <span class="price">$9,900</span>
+                    <div class="steppers stepper-naranja">
+                        <button>-</button>
+                        <input type="numer" value="1">
+                        <button>+</button>
+                    </div>
+                </div>
+            </figure>
+            <!-- end card II -->
+            <!-- card III -->
+            <figure class="figure figure-violeta">
+            <div class="figure-img">
+                <img src="./img/comidas/burger.png" alt="Hamburguesa con papas fritas">
+            </div>
+            <figcaption>Hamburguesa</figcaption>
+                <p>Hamburguesa doble de carne, doble queso cheddar y bacon.</p>
+                <div class="figure-footer">
+                <span class="price">$14,500</span>
+                    <div class="steppers stepper-violeta">
+                        <button>-</button>
+                        <input type="numer" value="1">
+                        <button>+</button>
+                    </div>
+                </div>
+            </figure>
+            <!-- end card III -->
+            <figure class="figure figure-rosa">
+            <div class="figure-img">
+                <img src="./img/comidas/cheesecake.png" alt="Cheesecake de frutos rojos">
+            </div>
+            <figcaption>Cheesecake</figcaption>
+                <p>Torta de crema de queso cubierta con mermelada casera de frutos rojos.</p>
+                <div class="figure-footer">
+                <span class="price">$7500</span>
+                    <div class="steppers stepper-rosa">
+                        <button>-</button>
+                        <input type="numer" value="1">
+                        <button>+</button>
+                    </div>
+                </div>
+            </figure>
+        </section>
+        <h3 id="categorias" class="fs-2 text-center w-100">Explorá las <span class="destacados">CATEGORÍAS</span></h3>
+        <section id="categorias" class="fondo-categorias">
+            <div class="contenedor">
+                <div class="flex">
+                    <figure class="categorias">
+                        <figcaption>Desayunos</figcaption>
+                            <img src="./img/desayunos.png" alt="">
+                            <a href="#">Explorar</a>
+                    </figure>
+                    <figure class="categoria-almuerzos categorias">
+                        <figcaption>Almuerzos</figcaption>
+                            <img src="./img/almuerzos.png" alt="">
+                            <a href="#">Explorar</a>
+                    </figure>
+                    <figure class="categoria-meriendas categorias">
+                        <figcaption>Meriendas</figcaption>
+                            <img src="./img/meriendas.png" alt="">
+                            <a href="#">Explorar</a>
+                    </figure>
+                    <figure class="categoria-cenas categorias">
+                        <figcaption>Cenas</figcaption>
+                            <img src="./img/cenas.png" alt="">
+                            <a href="#">Explorar</a>
+                    </figure>
+                </div>
+            </div>
+        </section>
+        <section class="buscador">
+            <h4 class="fs-2 text-center w-100">¿Qué se te antoja hoy?</h4>
+            <div class="filters">
+                <div class="filters-search">
+                    <input type="search" placeholder="Buscar">
+                    <button>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="bi bi-search-heart" viewBox="0 0 16 16">
+                        <path d="M6.5 4.482c1.664-1.673 5.825 1.254 0 5.018-5.825-3.764-1.664-6.69 0-5.018"/>
+                        <path d="M13 6.5a6.47 6.47 0 0 1-1.258 3.844q.06.044.115.098l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1-.1-.115h.002A6.5 6.5 0 1 1 13 6.5M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11"/>
+                        </svg>
+                    </button>
+                </div><!-- end search -->              
+            </div><!-- end filter -->
+        </section>
+        <section>
+            <!-- desayunos -->
+            <h5 id="momentos" class="desayunos">DESAYUNOS</h5>
+            <div class="d-flex">
+                <figure class="figura">
+                    <figcaption>Pancakes</figcaption>
+                    <img class="figura-img"src="./img/comidas/pancakes.png" alt="">
+                    <p>Pancakes acompañados con frutas de estación y jugo exprimido de naranja</p>
+                    <div class="figura-footer">
+                        <span class="precio">$13,900</span>
+                    <div class="stepper">
+                        <button>-</button>
+                        <input type="numer" value="1">
+                        <button>+</button>
+                    </div>
+                    </div>
+                </figure>
+                <figure class="figura">
+                    <figcaption>Tostadas</figcaption>
+                    <img class="figura-img"src="./img/comidas/huevos.png" alt="">
+                    <p>Tostadas de pan blanco con dos huevos fritos y toques de ricas especias.</p>
+                    <div class="figura-footer">
+                        <span class="precio">$13,900</span>
+                    <div class="stepper">
+                        <button>-</button>
+                        <input type="numer" value="1">
+                        <button>+</button>
+                    </div>
+                    </div>
+                </figure>
+                <figure class="figura">
+                    <figcaption>Croissant</figcaption>
+                    <img class="figura-img"src="./img/comidas/pan-chocolate.png" alt="">
+                    <p>Croissant XL de manteca, rellena de nutella, crema pastelera o chocolate derretido.</p>
+                    <div class="figura-footer">
+                        <span class="precio">$13,900</span>
+                    <div class="stepper">
+                        <button>-</button>
+                        <input type="numer" value="1">
+                        <button>+</button>
+                    </div>
+                    </div>
+                </figure>
+                <figure class="figura">
+                    <figcaption>Bowl</figcaption>
+                    <img class="figura-img"src="./img/comidas/granola.png" alt="">
+                    <p>Bowl relleno de un mix de yogurt, frutas, frutos secos y granola. </p>
+                    <div class="figura-footer">
+                        <span class="precio">$13,900</span>
+                    <div class="stepper">
+                        <button>-</button>
+                        <input type="numer" value="1">
+                        <button>+</button>
+                    </div>
+                    </div>
+                </figure>
+            </div>
+            <!-- almuerzos -->
+            <h5 class="almuerzos">ALMUERZOS</h5>
+            <div class="d-flex">
+                <figure class="figura-almuerzos figura">
+                    <figcaption>Milanesa</figcaption>
+                    <img class="figura-img" src="./img/comidas/milanesa.png" alt="">
+                    <p>Milanesa de pollo acompañada con salsa a elección y papas fritas.</p>
+                    <div class="figura-footer">
+                        <span class="precio">$13,900</span>
+                    <div class="stepper">
+                        <button>-</button>
+                        <input type="numer" value="1">
+                        <button>+</button>
+                    </div>
+                    </div>
+                </figure>
+                <figure class="figura-almuerzos figura">
+                    <figcaption>Bruschettas</figcaption>
+                    <img class="figura-img" src="./img/comidas/bruschetas.png" alt="">
+                    <p>Bruschettas de carne, pan, pollo y verduras a elección Acompañadas de arroz.</p>
+                    <div class="figura-footer">
+                        <span class="precio">$13,900</span>
+                    <div class="stepper">
+                        <button>-</button>
+                        <input type="numer" value="1">
+                        <button>+</button>
+                    </div>
+                    </div>
+                </figure>
+                <figure class="figura-almuerzos figura">
+                    <figcaption>Pasta liviana</figcaption>
+                    <img class="figura-img" src="./img/comidas/pasta-almuerzo.png" alt="">
+                    <p>Pasta (fideos a eleccion) salteada con verduras de estación y semillas.</p>
+                    <div class="figura-footer">
+                        <span class="precio">$13,900</span>
+                    <div class="stepper">
+                        <button>-</button>
+                        <input type="numer" value="1">
+                        <button>+</button>
+                    </div>
+                    </div>
+                </figure>
+                <figure class="figura-almuerzos figura">
+                    <figcaption>Pizza</figcaption>
+                    <img class="figura-img" src="./img/comidas/pizza.png" alt="">
+                    <p>Pizza individual mediterranea, napolitana, muzzarella o 4 quesos.</p>
+                    <div class="figura-footer">
+                        <span class="precio">$13,900</span>
+                    <div class="stepper">
+                        <button>-</button>
+                        <input type="numer" value="1">
+                        <button>+</button>
+                    </div>
+                    </div>
+                </figure>
+            </div>
+            <!-- meriendas -->
+            <h5 class="meriendas">MERIENDAS</h5>
+            <div class="d-flex">
+                <figure class="figura-meriendas figura">
+                    <figcaption>Cheesecake</figcaption>
+                    <img class="figura-img" src="./img/comidas/cheesecake.png" alt="">
+                    <p>Cheesecake cubierto con mermelada de frutos rojos casera y fresca</p>
+                    <div class="figura-footer">
+                        <span class="precio">$13,900</span>
+                    <div class="stepper">
+                        <button>-</button>
+                        <input type="numer" value="1">
+                        <button>+</button>
+                    </div>
+                    </div>
+                </figure>
+                <figure class="figura-meriendas figura">
+                    <figcaption>Waffles</figcaption>
+                    <img class="figura-img" src="./img/comidas/waffles.png" alt="">
+                    <p>Waffles caseros cubiertos con dip a eleccion (dulce de leche, nutella o crema)</p>
+                    <div class="figura-footer">
+                        <span class="precio">$13,900</span>
+                    <div class="stepper">
+                        <button>-</button>
+                        <input type="numer" value="1">
+                        <button>+</button>
+                    </div>
+                    </div>
+                </figure>
+                <figure class="figura-meriendas figura">
+                    <figcaption>Cookies</figcaption>
+                    <img class="figura-img" src="./img/comidas/cookies.png" alt="">
+                    <p>Porcion de 4 cookies medianas de vainilla, chocolate, pistacho o red velvet.</p>
+                    <div class="figura-footer">
+                        <span class="precio">$13,900</span>
+                    <div class="stepper">
+                        <button>-</button>
+                        <input type="numer" value="1">
+                        <button>+</button>
+                    </div>
+                </figure>
+                <figure class="figura-meriendas figura">
+                    <figcaption>Torta apple</figcaption>
+                    <img class="figura-img" src="./img/comidas/torta-manzana.png" alt="">
+                    <p>Pie relleno de manzana caramelizada y crema pastelera. Porcion individual o grande.</p>
+                    <div class="figura-footer">
+                        <span class="precio">$13,900</span>
+                    <div class="stepper">
+                        <button>-</button>
+                        <input type="numer" value="1">
+                        <button>+</button>
+                    </div>
+                    </div>
+                </figure>
+            </div>
+            <!-- cenas -->
+            <h5 class="cenas">CENAS</h5>
+            <div class="d-flex">
+                <figure class="figura-cenas figura">
+                    <figcaption>Burger</figcaption>
+                    <img class="figura-img" src="./img/comidas/burger.png" alt="">
+                    <p>Hamburguesa completa acompañado con papas fritas y un dip a eleccion</p>
+                    <div class="figura-footer">
+                        <span class="precio">$13,900</span>
+                    <div class="stepper">
+                        <button>-</button>
+                        <input type="numer" value="1">
+                        <button>+</button>
+                    </div>
+                    </div>
+                </figure>
+                <figure class="figura-cenas figura">
+                    <figcaption>Pastas</figcaption>
+                    <img class="figura-img" src="./img/comidas/pasta.png" alt="">
+                    <p>Pastas a eleccion acompañadas con salsa de crema, salsa bolognesa o pesto.</p>
+                    <div class="figura-footer">
+                        <span class="precio">$13,900</span>
+                    <div class="stepper">
+                        <button>-</button>
+                        <input type="numer" value="1">
+                        <button>+</button>
+                    </div>
+                    </div>
+                </figure>
+                <figure class="figura-cenas figura">
+                    <figcaption>Arroz proteico</figcaption>
+                    <img class="figura-img" src="./img/comidas/paella.png" alt="">
+                    <p>Arroz azafranado con pedazos de muslo de pollo salteados a la crema.</p>
+                    <div class="figura-footer">
+                        <span class="precio">$13,900</span>
+                    <div class="stepper">
+                        <button>-</button>
+                        <input type="numer" value="1">
+                        <button>+</button>
+                    </div>
+                    </div>
+                </figure>
+                <figure class="figura-cenas figura">
+                    <figcaption>Chow fan</figcaption>
+                    <img class="figura-img" src="./img/comidas/chow-fan.png" alt="">
+                    <p>Arroz chino frito salteado con verduras y langostinos crispy o naturales.</p>
+                    <div class="figura-footer">
+                        <span class="precio">$13,900</span>
+                    <div class="stepper">
+                        <button>-</button>
+                        <input type="numer" value="1">
+                        <button>+</button>
+                    </div>
+                    </div>
+                </figure>
+            </div>
+        </section>
+        <h3 id="contacto" class="fs-2 text-center w-100">¿Querés ser parte? <span class="destacados">REGISTRATE</span></h3>
+        <section>
+            <div class="flexbox">
+            <!-- form -->
+              <div class="card-form">
+                <p>Creá tu cuenta</p>
+                    <form>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="Nombre" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" placeholder="E-mail" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="tel" class="form-control" placeholder="Número de telefono" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="password" class="form-control" placeholder="Contraseña" required>
+                              <div class="form-text">
+                                La contraseña debe contener al menos 8 caracteres, una mayúscula y un número.
+                              </div>
+                        </div>
+                        <div class="mb-3">
+                            <input type="password" class="form-control" placeholder="Confirmar contraseña" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="state" class="form-label">Prefiero..</label>
+                            <select id="state" class="form-select" required>
+                                <option selected disabled>Forma de envío</option>
+                                <option value="BA">Pick-up</option>
+                                <option value="Córdoba">Delivery</option>
+                            </select>
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="terms" required>
+                            <label class="form-check-label" for="terms">
+                                Acepto términos y condiciones
+                            </label>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100 mb-2">Registrarse</button>
+                        <button type="button" class="btn btn-outline-primary w-100">Ya tienes cuenta? Inicia sesión</button>
+                    </form>
+                </div>
+            <!--end form -->
+                <div class="formaImagen">
+                    <img src="./img/fotoconforma.png" alt="">
+                </div>
+            </div>    
+        </section>
+        <h4 id="faqs" class="fs-2 text-center w-100">Preguntas frecuentes</h4>
+        <section class="faq">
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                        ¿Cómo funciona Menú a tu medida?
+                    </button>
+                    </h2>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        Ofrecemos platos listos para desayuno, almuerzo, merienda y cena. Podés armar tu menú diario eligiendo tus comidas favoritas o seleccionar uno de nuestros packs promocionales para varios días de la semana.</div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                        ¿Tengo que pedir con anticipación?
+                    </button>
+                    </h2>
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Sí. Para garantizar frescura y disponibilidad, los pedidos se realizan con al menos 24 horas de anticipación. Podés hacerlo de forma rápida y sencilla desde nuestra web.</div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                       ¿Hay opciones para diferentes preferencias alimenticias?
+                    </button>
+                    </h2>
+                    <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Claro. Contamos con platos variados que incluyen carnes, pescados, vegetarianos y opciones más ligeras. Cada plato tiene su descripción y lista de ingredientes.</div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                       ¿Ofrecen entrega a domicilio?
+                    </button>
+                    </h2>
+                    <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Sí. Realizamos entregas a domicilio en la zona especificada en nuestra página. También podés retirar tu pedido en nuestro punto de entrega si lo preferís.</div>
+                    </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                       ¿Puedo armar un pack semanal personalizado?
+                    </button>
+                    </h2>
+                    <div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Por supuesto. Podés elegir entre los packs prearmados o armar uno completamente a tu medida combinando desayunos, almuerzos, meriendas y cenas según tus gustos.</div>
+                </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- end main content -->
+    <footer>
+        <div class="flex-footer">
+            <div class="footer-logo">
+                <a href="#"><img src="./img/logo.png" alt=""></a>
+            </div>
+            <div class="footer-links">
+                <a href="#destacados">Destacados</a>
+                <a href="#categorias">Categorías</a>
+                <a href="#momentos">Momentos</a>
+                <a href="#contacto">Contacto</a>
+                <a href="#faqs">FAQ</a>
+            </div>
+            <div class="footer-redes">
+                <a href="#">
+                    <img src="./img/instagram.svg" alt="">
+                </a>
+                <a href="#">
+                    <img src="./img/facebook.svg" alt="">
+                </a>
+                <a href="#">
+                    <img src="./img/envelope.svg" alt="">
+                </a>
+            </div>
+        </div>
+    </footer>
+    <!-- burbuja de whatsapp -->
+    <a href="https://wa.me/54111234567" class="wa" target="_blank">
+        <img src="./img/whatsapp.svg" alt="">
+    </a>
+    <!-- offcanvas -->
+    <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+        <div class="offcanvas-header">
+            <p class="fs-3 mt-0 mb-0" id="offcanvasWithBothOptionsLabel">
+                Tu carrito
+            </p>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <section class="offcanvas-body">
+            <!-- item 1 -->
+            <div class="card mb-3">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="./img/burger.png" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <p class="card-title">Hamburguesa</p>
+                            <p class="card-text">$15.000</p>
+                            <p class="card-text">
+                                Cantidad: 1
+                            </p>
+                            <button class="btn btn-outline-danger">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash3" viewBox="0 0 16 16">
+                                <path d="M6.5 1h3a.5.5 0 0 1 .5.5v1H6v-1a.5.5 0 0 1 .5-.5M11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3A1.5 1.5 0 0 0 5 1.5v1H1.5a.5.5 0 0 0 0 1h.538l.853 10.66A2 2 0 0 0 4.885 16h6.23a2 2 0 0 0 1.994-1.84l.853-10.66h.538a.5.5 0 0 0 0-1zm1.958 1-.846 10.58a1 1 0 0 1-.997.92h-6.23a1 1 0 0 1-.997-.92L3.042 3.5zm-7.487 1a.5.5 0 0 1 .528.47l.5 8.5a.5.5 0 0 1-.998.06L5 5.03a.5.5 0 0 1 .47-.53Zm5.058 0a.5.5 0 0 1 .47.53l-.5 8.5a.5.5 0 1 1-.998-.06l.5-8.5a.5.5 0 0 1 .528-.47M8 4.5a.5.5 0 0 1 .5.5v8.5a.5.5 0 0 1-1 0V5a.5.5 0 0 1 .5-.5"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end item 1 -->
+             <!-- item 1 -->
+            <div class="card mb-3">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="./img/milanesa.png" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <p class="card-title">Milanesa</p>
+                            <p class="card-text">$10.000</p>
+                            <p class="card-text">
+                                Cantidad: 1
+                            </p>
+                            <button class="btn btn-outline-danger">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash3" viewBox="0 0 16 16">
+                                <path d="M6.5 1h3a.5.5 0 0 1 .5.5v1H6v-1a.5.5 0 0 1 .5-.5M11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3A1.5 1.5 0 0 0 5 1.5v1H1.5a.5.5 0 0 0 0 1h.538l.853 10.66A2 2 0 0 0 4.885 16h6.23a2 2 0 0 0 1.994-1.84l.853-10.66h.538a.5.5 0 0 0 0-1zm1.958 1-.846 10.58a1 1 0 0 1-.997.92h-6.23a1 1 0 0 1-.997-.92L3.042 3.5zm-7.487 1a.5.5 0 0 1 .528.47l.5 8.5a.5.5 0 0 1-.998.06L5 5.03a.5.5 0 0 1 .47-.53Zm5.058 0a.5.5 0 0 1 .47.53l-.5 8.5a.5.5 0 1 1-.998-.06l.5-8.5a.5.5 0 0 1 .528-.47M8 4.5a.5.5 0 0 1 .5.5v8.5a.5.5 0 0 1-1 0V5a.5.5 0 0 1 .5-.5"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end item 2 -->
+            <!-- item 1 -->
+            <div class="card mb-3">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="./img/cheesecake.png" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <p class="card-title">Cheesecake</p>
+                            <p class="card-text">$7000</p>
+                            <p class="card-text">
+                                Cantidad: 1
+                            </p>
+                            <button class="btn btn-outline-danger">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash3" viewBox="0 0 16 16">
+                                <path d="M6.5 1h3a.5.5 0 0 1 .5.5v1H6v-1a.5.5 0 0 1 .5-.5M11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3A1.5 1.5 0 0 0 5 1.5v1H1.5a.5.5 0 0 0 0 1h.538l.853 10.66A2 2 0 0 0 4.885 16h6.23a2 2 0 0 0 1.994-1.84l.853-10.66h.538a.5.5 0 0 0 0-1zm1.958 1-.846 10.58a1 1 0 0 1-.997.92h-6.23a1 1 0 0 1-.997-.92L3.042 3.5zm-7.487 1a.5.5 0 0 1 .528.47l.5 8.5a.5.5 0 0 1-.998.06L5 5.03a.5.5 0 0 1 .47-.53Zm5.058 0a.5.5 0 0 1 .47.53l-.5 8.5a.5.5 0 1 1-.998-.06l.5-8.5a.5.5 0 0 1 .528-.47M8 4.5a.5.5 0 0 1 .5.5v8.5a.5.5 0 0 1-1 0V5a.5.5 0 0 1 .5-.5"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end item 3 -->
+             <!-- item 1 -->
+            <div class="card mb-3">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="./img/pancakes.png" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <p class="card-title">Pancakes</p>
+                            <p class="card-text">$7000</p>
+                            <p class="card-text">
+                                Cantidad: 1
+                            </p>
+                            <button class="btn btn-outline-danger">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash3" viewBox="0 0 16 16">
+                                <path d="M6.5 1h3a.5.5 0 0 1 .5.5v1H6v-1a.5.5 0 0 1 .5-.5M11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3A1.5 1.5 0 0 0 5 1.5v1H1.5a.5.5 0 0 0 0 1h.538l.853 10.66A2 2 0 0 0 4.885 16h6.23a2 2 0 0 0 1.994-1.84l.853-10.66h.538a.5.5 0 0 0 0-1zm1.958 1-.846 10.58a1 1 0 0 1-.997.92h-6.23a1 1 0 0 1-.997-.92L3.042 3.5zm-7.487 1a.5.5 0 0 1 .528.47l.5 8.5a.5.5 0 0 1-.998.06L5 5.03a.5.5 0 0 1 .47-.53Zm5.058 0a.5.5 0 0 1 .47.53l-.5 8.5a.5.5 0 1 1-.998-.06l.5-8.5a.5.5 0 0 1 .528-.47M8 4.5a.5.5 0 0 1 .5.5v8.5a.5.5 0 0 1-1 0V5a.5.5 0 0 1 .5-.5"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end item 3 -->
+             <p class="fs-5">
+                Total: $39.000
+             </p>
+             <button class="btn btn-outline-secondary btn-lg">
+                Finalizar la compra
+             </button>
+        </section><!-- end body offcanvas -->
+    </div>
+    <!-- end offcanvas -->
+    <!-- script BS -->
+    <script src="./js/bootstrap.min.js"></script>
+</body>
+</html>
