@@ -166,6 +166,12 @@ header {
     background-color: transparent;
 }
 
+.headerp {
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 40px;
+}
+
 .fondo-forma {
     background-color: #FEF1E1;
     background-image: url(../img/Rectangle-44.png);
@@ -194,11 +200,7 @@ h1 {
     line-height: 54px;
 }
 
-h2 {
-    font-size: 30px;
-    font-weight: 400;
-    line-height: 40px;
-}
+
 
 .palabraDestacada {
     color: #E7704A;
@@ -232,7 +234,7 @@ h2 {
 
 /* destacados*/
 
-h3 {
+h2 {
     line-height: 40px;
     margin-top: 150px;
     margin-bottom: 150px;
@@ -246,7 +248,7 @@ h4 {
     margin-bottom: 30px;
 }
 
-h5 {
+h3 {
     font-weight: 700;
     line-height: 40px;
     letter-spacing: 5px;
