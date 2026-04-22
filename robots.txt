@@ -1,5 +1,12 @@
 User-Agent: *
 Allow: /
+
+
 Disallow: /css/
 Disallow: /js/
 Disallow: /img/
+Disallow: /carrito.html
+Disallow: /registro.html
+Disallow: /admin/
+
+Sitemap: https://julianarocha-web.github.io/shop.menuatumedida/sitemap.xml

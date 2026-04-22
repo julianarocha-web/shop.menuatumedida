@@ -4,14 +4,49 @@
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
+  <url>
+    <loc>https://julianarocha-web.github.io/shop.menuatumedida/index.html</loc>
+    <lastmod>2026-04-22T15:00:09+00:00</lastmod>
+    <priority>1.00</priority>
+  </url>
 
-<url>
-  <loc>https://julianarocha-web.github.io/shop.menuatumedida/</loc>
-  <lastmod>2026-04-22T15:00:09+00:00</lastmod>
-  <priority>1.00</priority>
-</url>
+  // simulado, ya que tengo una landing page. //
 
+  <url>
+    <loc>https://julianarocha-web.github.io/shop.menuatumedida/destacados.html</loc>
+    <lastmod>2026-04-22T15:00:09+00:00</lastmod>
+    <priority>0.90</priority>
+  </url>
+
+  <url>
+    <loc>https://julianarocha-web.github.io/shop.menuatumedida/momentos.html</loc>
+    <lastmod>2026-04-22T15:00:09+00:00</lastmod>
+    <priority>0.85</priority>
+  </url>
+
+  <url>
+    <loc>https://julianarocha-web.github.io/shop.menuatumedida/categorias.html</loc>
+    <lastmod>2026-04-22T15:00:09+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://julianarocha-web.github.io/shop.menuatumedida/registro.html</loc>
+    <lastmod>2026-04-22T15:00:09+00:00</lastmod>
+    <priority>0.70</priority>
+  </url>
+
+  <url>
+    <loc>https://julianarocha-web.github.io/shop.menuatumedida/carrito.html</loc>
+    <lastmod>2026-04-22T15:00:09+00:00</lastmod>
+    <priority>0.60</priority>
+  </url>
+
+  <url>
+    <loc>https://julianarocha-web.github.io/shop.menuatumedida/preguntas-frecuentes.html</loc>
+    <lastmod>2026-04-22T15:00:09+00:00</lastmod>
+    <priority>0.50</priority>
+  </url>
 
 </urlset>
